@@ -14,6 +14,7 @@ background: @main-bg;
         align-items: flex-end;
         @media @mobile{
             max-width: 500px;
+            width: 100%;
             flex-flow: column wrap;
             align-items: center;
             padding-bottom: 16px;
@@ -28,19 +29,21 @@ background: @main-bg;
     .links {
         padding-right: 0;
             @media @mobile{
-            max-width: 100%;
-            padding-left: 0;
-        }
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            }
         a {
             text-decoration: none;
             color: @shark;
             font-size: 1.6rem;
             padding-right: 30px;
             @media @mobile{
-            padding-right: 50px;
+                width: 100%;
+                padding: 0%;
+                 }
             }
-        }
-        
-    }
 
-}
+        }
+    }      

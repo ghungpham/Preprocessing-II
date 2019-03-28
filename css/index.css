@@ -192,6 +192,7 @@ nav .navcontainer {
 @media (max-width: 500px) {
   nav .navcontainer {
     max-width: 500px;
+    width: 100%;
     flex-flow: column wrap;
     align-items: center;
     padding-bottom: 16px;
@@ -210,8 +211,10 @@ nav .links {
 }
 @media (max-width: 500px) {
   nav .links {
-    max-width: 100%;
-    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
   }
 }
 nav .links a {
@@ -222,7 +225,8 @@ nav .links a {
 }
 @media (max-width: 500px) {
   nav .links a {
-    padding-right: 50px;
+    width: 100%;
+    padding: 0%;
   }
 }
 .footer {
